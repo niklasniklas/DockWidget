@@ -31,20 +31,20 @@ void MainWindow::createDockWindows()
 
 
 
-    QListWidgetItem *item1 = new QListWidgetItem(QIcon("D:\\1.jpg"), "A", videoEditList);
+    QListWidgetItem *item1 = new QListWidgetItem(QIcon("E:\\1.jpg"), "A", videoEditList);
     item1->setTextAlignment(Qt::AlignHCenter|Qt::AlignBottom);
     item1->setSizeHint(QSize(100, 120));
     videoEditList->addItem(item1);
 
 
-    QListWidgetItem *item2 = new QListWidgetItem(QIcon("D:\\2.jpg"), "B", videoEditList);
-    item1->setTextAlignment(Qt::AlignHCenter|Qt::AlignBottom);
-    item1->setSizeHint(QSize(100, 120));
+    QListWidgetItem *item2 = new QListWidgetItem(QIcon("E:\\2.jpg"), "B", videoEditList);
+    item2->setTextAlignment(Qt::AlignRight|Qt::AlignBottom);
+    item2->setSizeHint(QSize(100, 120));
     videoEditList->addItem(item2);
 
-    QListWidgetItem *item3 = new QListWidgetItem(QIcon("D:\\3.jpg"), "C", videoEditList);
-    item1->setTextAlignment(Qt::AlignHCenter|Qt::AlignBottom);
-    item1->setSizeHint(QSize(100, 120));
+    QListWidgetItem *item3 = new QListWidgetItem(QIcon("E:\\3.jpg"), "C", videoEditList);
+    item3->setTextAlignment(Qt::AlignCenter|Qt::AlignBottom);
+    item3->setSizeHint(QSize(100, 120));
     videoEditList->addItem(item3);
 
     dock->setWidget(videoEditList);
