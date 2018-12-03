@@ -7,7 +7,12 @@ MainWindow::MainWindow(QWidget *parent)
     setMinimumSize(1500,800);
     setCentralWidget(textEdit);
 
+    videoClip tmp("E:/1.mp4", 100, 200);
+    files.append(tmp);
+
     createDockWindows();
+
+    int i =10;
 
 }
 
@@ -31,7 +36,7 @@ void MainWindow::createDockWindows()
 
 
 
-    QListWidgetItem *item1 = new QListWidgetItem(QIcon("E:\\1.jpg"), "A", videoEditList);
+    QListWidgetItem *item1 = new QListWidgetItem(QIcon("E:\\1.jpg"), "E:\\2.jpg", videoEditList);
     item1->setTextAlignment(Qt::AlignHCenter|Qt::AlignBottom);
     item1->setSizeHint(QSize(100, 120));
     videoEditList->addItem(item1);
@@ -47,8 +52,17 @@ void MainWindow::createDockWindows()
     item3->setSizeHint(QSize(100, 120));
     videoEditList->addItem(item3);
 
+
+    //QString str = files.at(0).filepath;
+//    QListWidgetItem *item4 = new QListWidgetItem(QIcon("E:\\2.jpg"), files.at(0).filepath, videoEditList);
+    QListWidgetItem *item4 = new QListWidgetItem(QIcon("E:\\2.jpg"), "E:\\2.jpg", videoEditList);
+    item4->setTextAlignment(Qt::AlignRight|Qt::AlignBottom);
+    item4->setSizeHint(QSize(100, 120));
+    videoEditList->addItem(item4);
+
+
     dock->setWidget(videoEditList);
-    addDockWidget(Qt::RightDockWidgetArea, dock);
+    addDockWidget(Qt::BottomDockWidgetArea, dock);
 
 
 

@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QTextEdit>
 #include <QListWidget>
+#include "videoclip.h"
 
 class MainWindow : public QMainWindow
 {
@@ -18,6 +19,8 @@ private:
 
     QTextEdit   *textEdit;
     QListWidget *videoEditList;
+
+    QList<videoClip>  files;
 };
 
 #endif // MAINWINDOW_H

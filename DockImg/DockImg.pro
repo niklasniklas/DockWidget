@@ -26,8 +26,10 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    videoeditwidget.cpp
+    videoeditwidget.cpp \
+    videoclip.cpp
 
 HEADERS += \
         mainwindow.h \
-    videoeditwidget.h
+    videoeditwidget.h \
+    videoclip.h

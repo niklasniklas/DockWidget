@@ -8,6 +8,7 @@
 
 class VideoEditWidget : public QListWidget
 {
+    Q_OBJECT
 public:
     VideoEditWidget();
 };
